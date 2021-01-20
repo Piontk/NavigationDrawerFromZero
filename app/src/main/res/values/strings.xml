@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NavigationDrawerFromZero</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="principal">Principal</string>
+    <string name="clientes">Clientes</string>
+    <string name="servicos">Serviços</string>
+    <string name="contato">Contato</string>
+    <string name="sobre">Sobre</string>
+    <string name="emcontato">Entre em contato</string>
+    <string name="titulo_menu_lateral">Meu NavigationDrawer</string>
+    <string name="subtitulo_menu_lateral">Implementado do zero absoluto</string>
+    <string name="texto_sobre">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante urna, pulvinar quis lacinia a, vehicula nec nisi. Praesent sed mauris ac ex euismod facilisis vel at nulla. Mauris sapien arcu, lobortis eget risus sit amet, mattis faucibus magna. Vivamus blandit nulla at nunc tempor, eget tempor turpis elementum. Nullam aliquam mauris enim, porta vulputate eros tempus auctor. Maecenas vestibulum eu nulla non semper. Sed imperdiet, nibh ut fermentum placerat, magna turpis laoreet nisi, eget iaculis tortor mi in mi. Donec eleifend pharetra mi fringilla aliquet. Sed ac diam ligula. Suspendisse potenti. Quisque condimentum dapibus interdum. Mauris ac neque vitae sem tristique pulvinar sed quis enim. Suspendisse ac efficitur sem. Duis bibendum odio ut ligula sagittis, sed aliquet dolor sollicitudin. Phasellus quis vulputate diam, eget finibus est.</string>
+</resources>
