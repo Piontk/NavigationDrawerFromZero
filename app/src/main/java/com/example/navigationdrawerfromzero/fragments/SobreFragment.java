@@ -10,6 +10,9 @@ import android.view.ViewGroup;
 
 import com.example.navigationdrawerfromzero.R;
 
+import mehdi.sakout.aboutpage.AboutPage;
+import mehdi.sakout.aboutpage.Element;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link SobreFragment#newInstance} factory method to
@@ -60,7 +63,21 @@ public class SobreFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_sobre, container, false);
+
+        Element versao = new Element();
+        versao.setTitle("Versão 1.0");
+
+        return new AboutPage( getActivity() )
+                .setImage(R.drawable.money)
+                .setDescription("Este é um app voltado a entender o funcionamento do NavigationDrawer no Android, criando o menu " +
+                        "lateral e a página sobre com uma biblioteca open source de terceiros")
+                .addGroup("Entre em contato: ")
+                .addEmail("t.piontkewicz@gmail.com", "Me envie um email")
+                .addWebsite("https://github.com/Piontk", "Visite meu perfil")
+                .addGroup("Redes sociais")
+                .addGitHub("Piontk", "GitHub")
+                .addInstagram("android", "Instagram")
+                .addItem(versao)
+                .create();
     }
 }
