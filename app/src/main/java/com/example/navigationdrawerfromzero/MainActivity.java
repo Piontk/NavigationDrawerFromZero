@@ -6,6 +6,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "FloatingActionButton pressionado!", Toast.LENGTH_LONG).show();
+                sendMail();
             }
         });
         DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
@@ -50,5 +51,16 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.fragmento_host_navegacao);
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    public void sendMail(){
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.putExtra(Intent.EXTRA_EMAIL, new String [] {"atendimento@mycompany.com"});
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Contato pelo app");
+
+        intent.setType("message/rfc822");
+
+        startActivity(Intent.createChooser(intent, "Compartilhar"));
+
     }
 }
